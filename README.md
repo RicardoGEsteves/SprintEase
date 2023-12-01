@@ -1,4 +1,14 @@
-This is `SprintEase` a flexible work management tool for agile development.
+# SprintEase
+
+This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Flexible work management tool for agile development
+
+## Stack
+
+`React, typescript, Next 14, Clerk, Supabase, Postgres, Zustand, Prisma, Tailwind, Shadcn-ui, `
+
+### Additional info
+
+This application is built with `Server Actions`
 
 ## Getting Started
 
