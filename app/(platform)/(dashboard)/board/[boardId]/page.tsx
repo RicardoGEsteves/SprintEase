@@ -5,19 +5,21 @@ import { db } from "@/lib/db";
 
 import { ListContainer } from "./_components/list-container";
 
-interface IBoardIdPageProps {
+interface BoardIdPageProps {
   params: {
     boardId: string;
   };
-}
+};
 
-const BoardIdPage = async ({ params }: IBoardIdPageProps) => {
+const BoardIdPage = async ({
+  params,
+}: BoardIdPageProps) => {
   const { orgId } = auth();
 
   if (!orgId) {
     redirect("/select-org");
   }
-
+  
   const lists = await db.list.findMany({
     where: {
       boardId: params.boardId,
@@ -39,7 +41,10 @@ const BoardIdPage = async ({ params }: IBoardIdPageProps) => {
 
   return (
     <div className="p-4 h-full overflow-x-auto">
-      <ListContainer boardId={params.boardId} data={lists} />
+      <ListContainer
+        boardId={params.boardId}
+        data={lists}
+      />
     </div>
   );
 };

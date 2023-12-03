@@ -4,11 +4,52 @@ This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Fle
 
 ## Stack
 
-`React, typescript, Next 14, Clerk, Supabase, Postgres, Zustand, Prisma, Tailwind, Shadcn-ui, `
+`React, Typescript, Next.js 14, Clerk, Supabase, PostgreSQL, Zustand, Prisma, Tailwind, Shadcn-ui, Server Actions, Stripe, `
+
+### Prerequisites
+
+**Node version 18.x.x**
+
+### Install packages
+
+```shell
+npm i
+```
+
+### Setup .env file
+
+```js
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+
+DATABASE_URL=
+
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+
+STRIPE_API_KEY=
+
+NEXT_PUBLIC_APP_URL=
+
+STRIPE_WEBHOOK_SECRET=
+```
 
 ### Additional info
 
 This application is built with `Server Actions`
+
+### Setup Prisma
+
+Add PostgreSQL Database
+
+```bash
+npx prisma generate
+npx prisma db push
+
+```
 
 ## Getting Started
 

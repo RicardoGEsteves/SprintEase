@@ -1,5 +1,5 @@
 import { Card, List } from "@prisma/client";
 
-export type TListWithCards = List & { cards: Card[] };
+export type ListWithCards = List & { cards: Card[] };
 
-export type TCardWithList = Card & { list: List };
+export type CardWithList = Card & { list: List };

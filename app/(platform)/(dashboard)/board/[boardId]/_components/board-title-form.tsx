@@ -11,9 +11,11 @@ import { useAction } from "@/hooks/use-action";
 
 interface BoardTitleFormProps {
   data: Board;
-}
+};
 
-export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
+export const BoardTitleForm = ({
+  data,
+}: BoardTitleFormProps) => {
   const { execute } = useAction(updateBoard, {
     onSuccess: (data) => {
       toast.success(`Board "${data.title}" updated!`);
@@ -22,7 +24,7 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
     },
     onError: (error) => {
       toast.error(error);
-    },
+    }
   });
 
   const formRef = useRef<ElementRef<"form">>(null);
@@ -34,9 +36,9 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
   const enableEditing = () => {
     setIsEditing(true);
     setTimeout(() => {
-      inputRef.current?.focus();
-      inputRef.current?.select();
-    });
+     inputRef.current?.focus();
+     inputRef.current?.select(); 
+    })
   };
 
   const disableEditing = () => {
@@ -45,7 +47,7 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
 
   const onSubmit = (formData: FormData) => {
     const title = formData.get("title") as string;
-
+    
     execute({
       title,
       id: data.id,
@@ -58,11 +60,7 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
 
   if (isEditing) {
     return (
-      <form
-        action={onSubmit}
-        ref={formRef}
-        className="flex items-center gap-x-2"
-      >
+      <form action={onSubmit} ref={formRef} className="flex items-center gap-x-2">
         <FormInput
           ref={inputRef}
           id="title"
@@ -71,9 +69,9 @@ export const BoardTitleForm = ({ data }: BoardTitleFormProps) => {
           className="text-lg font-bold px-[7px] py-1 h-7 bg-transparent focus-visible:outline-none focus-visible:ring-transparent border-none"
         />
       </form>
-    );
+    )
   }
-
+  
   return (
     <Button
       onClick={enableEditing}

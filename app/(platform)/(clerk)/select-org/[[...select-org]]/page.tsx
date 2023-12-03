@@ -8,4 +8,4 @@ export default function CreateOrganizationPage() {
       afterCreateOrganizationUrl="/organization/:id"
     />
   );
-}
+};

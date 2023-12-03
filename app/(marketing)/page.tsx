@@ -46,6 +46,7 @@ const MarketingPage = () => {
         its intuitive interface and powerful tools, it&apos;s the key to agile
         success.&quot;
       </div>
+
       <Button className="mt-6" size="lg" asChild>
         <Link href="/sign-up">Start free plan</Link>
       </Button>
