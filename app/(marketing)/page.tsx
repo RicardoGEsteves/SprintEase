@@ -5,6 +5,7 @@ import { Medal } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import DemoContent from "./_components/demo-content";
 
 const headingFont = localFont({
   src: "../../public/fonts/font.woff2",
@@ -50,6 +51,8 @@ const MarketingPage = () => {
       <Button className="mt-6" size="lg" asChild>
         <Link href="/sign-up">Start free plan</Link>
       </Button>
+
+      <DemoContent />
     </div>
   );
 };

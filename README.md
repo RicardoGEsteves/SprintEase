@@ -2,15 +2,17 @@
 
 This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Flexible work management tool for agile development
 
-#### Landing page
-
-<img src="/demo-images/app-boards.PNG"/>
-<img src="/demo-images/board.PNG"/>
-<img src="/demo-images/task-info.PNG"/>
+> #### Landing page
+>
+> <img src="/public/demo-images/landing.png"/>
 
 ##
 
-#### Platform
+> #### Platform
+>
+> <img src="/public/demo-images/boards.png"/>
+> <img src="/public/demo-images/board.png"/>
+> <img src="/public/demo-images/task.png"/>
 
 ##
 
