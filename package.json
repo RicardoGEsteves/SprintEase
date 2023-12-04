@@ -32,7 +32,7 @@
     "react-dom": "^18",
     "sonner": "^1.2.4",
     "stripe": "^14.7.0",
-    "tailwind-merge": "^2.0.0",
+    "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
     "unsplash-js": "^7.0.18",
     "usehooks-ts": "^2.9.1",
