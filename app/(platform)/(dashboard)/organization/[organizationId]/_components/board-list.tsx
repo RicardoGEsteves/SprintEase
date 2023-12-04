@@ -23,8 +23,8 @@ export const BoardList = async () => {
       orgId,
     },
     orderBy: {
-      createdAt: "desc"
-    }
+      createdAt: "desc",
+    },
   });
 
   const availableCount = await getAvailableCount();
@@ -32,7 +32,7 @@ export const BoardList = async () => {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center font-semibold text-lg text-neutral-700">
+      <div className="flex items-center font-semibold text-lg text-zinc-700">
         <User2 className="h-6 w-6 mr-2" />
         Your boards
       </div>
@@ -45,9 +45,7 @@ export const BoardList = async () => {
             style={{ backgroundImage: `url(${board.imageThumbUrl})` }}
           >
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition" />
-            <p className="relative font-semibold text-white">
-              {board.title}
-            </p>
+            <p className="relative font-semibold text-white">{board.title}</p>
           </Link>
         ))}
         <FormPopover sideOffset={10} side="right">
@@ -57,7 +55,9 @@ export const BoardList = async () => {
           >
             <p className="text-sm">Create new board</p>
             <span className="text-xs">
-              {isPro ? "Unlimited" : `${MAX_FREE_BOARDS - availableCount} remaining`}
+              {isPro
+                ? "Unlimited"
+                : `${MAX_FREE_BOARDS - availableCount} remaining`}
             </span>
             <Hint
               sideOffset={40}
@@ -65,9 +65,7 @@ export const BoardList = async () => {
                 Free Workspaces can have up to 5 open boards. For unlimited boards upgrade this workspace.
               `}
             >
-              <HelpCircle
-                className="absolute bottom-2 right-2 h-[14px] w-[14px]"
-              />
+              <HelpCircle className="absolute bottom-2 right-2 h-[14px] w-[14px]" />
             </Hint>
           </div>
         </FormPopover>

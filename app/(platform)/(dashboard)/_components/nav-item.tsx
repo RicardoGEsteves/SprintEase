@@ -2,18 +2,13 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
-import {
-  Activity,
-  CreditCard,
-  Layout,
-  Settings,
-} from "lucide-react";
+import { Activity, CreditCard, Layout, Settings } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { 
+import {
   AccordionContent,
-  AccordionItem, 
-  AccordionTrigger
+  AccordionItem,
+  AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -30,7 +25,7 @@ interface NavItemProps {
   isActive: boolean;
   organization: Organization;
   onExpand: (id: string) => void;
-};
+}
 
 export const NavItem = ({
   isExpanded,
@@ -69,15 +64,12 @@ export const NavItem = ({
   };
 
   return (
-    <AccordionItem
-      value={organization.id}
-      className="border-none"
-    >
+    <AccordionItem value={organization.id} className="border-none">
       <AccordionTrigger
         onClick={() => onExpand(organization.id)}
         className={cn(
-          "flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-500/10 transition text-start no-underline hover:no-underline",
-          isActive && !isExpanded && "bg-sky-500/10 text-sky-700"
+          "flex items-center gap-x-2 p-1.5 text-zinc-700 rounded-md hover:bg-zinc-500/10 transition text-start no-underline hover:no-underline",
+          isActive && !isExpanded && "bg-gray-600/10 text-sky-700"
         )}
       >
         <div className="flex items-center gap-x-2">
@@ -89,12 +81,10 @@ export const NavItem = ({
               className="rounded-sm object-cover"
             />
           </div>
-          <span className="font-medium text-sm">
-            {organization.name}
-          </span>
+          <span className="font-medium text-sm">{organization.name}</span>
         </div>
       </AccordionTrigger>
-      <AccordionContent className="pt-1 text-neutral-700">
+      <AccordionContent className="pt-1 text-zinc-700">
         {routes.map((route) => (
           <Button
             key={route.href}
@@ -102,7 +92,7 @@ export const NavItem = ({
             onClick={() => onClick(route.href)}
             className={cn(
               "w-full font-normal justify-start pl-10 mb-1",
-              pathname === route.href && "bg-sky-500/10 text-sky-700"
+              pathname === route.href && "bg-gray-600/10 text-sky-700"
             )}
             variant="ghost"
           >

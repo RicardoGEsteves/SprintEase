@@ -25,7 +25,7 @@ interface FormPopoverProps {
   side?: "left" | "right" | "top" | "bottom";
   align?: "start" | "center" | "end";
   sideOffset?: number;
-};
+}
 
 export const FormPopover = ({
   children,
@@ -46,7 +46,7 @@ export const FormPopover = ({
     onError: (error) => {
       toast.error(error);
       proModal.onOpen();
-    }
+    },
   });
 
   const onSubmit = (formData: FormData) => {
@@ -54,25 +54,23 @@ export const FormPopover = ({
     const image = formData.get("image") as string;
 
     execute({ title, image });
-  }
+  };
 
   return (
     <Popover>
-      <PopoverTrigger asChild>
-        {children}
-      </PopoverTrigger>
+      <PopoverTrigger asChild>{children}</PopoverTrigger>
       <PopoverContent
         align={align}
         className="w-80 pt-3"
         side={side}
         sideOffset={sideOffset}
       >
-        <div className="text-sm font-medium text-center text-neutral-600 pb-4">
+        <div className="text-sm font-medium text-center text-zinc-600 pb-4">
           Create board
         </div>
         <PopoverClose ref={closeRef} asChild>
           <Button
-            className="h-auto w-auto p-2 absolute top-2 right-2 text-neutral-600"
+            className="h-auto w-auto p-2 absolute top-2 right-2 text-zinc-600"
             variant="ghost"
           >
             <X className="h-4 w-4" />
@@ -80,10 +78,7 @@ export const FormPopover = ({
         </PopoverClose>
         <form action={onSubmit} className="space-y-4">
           <div className="space-y-4">
-            <FormPicker
-              id="image"
-              errors={fieldErrors}
-            />
+            <FormPicker id="image" errors={fieldErrors} />
             <FormInput
               id="title"
               label="Board title"
@@ -91,9 +86,7 @@ export const FormPopover = ({
               errors={fieldErrors}
             />
           </div>
-          <FormSubmit className="w-full">
-            Create
-          </FormSubmit>
+          <FormSubmit className="w-full">Create</FormSubmit>
         </form>
       </PopoverContent>
     </Popover>
