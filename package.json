@@ -21,7 +21,7 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "@tanstack/react-query": "^5.8.2",
+    "@tanstack/react-query": "^5.12.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
@@ -32,7 +32,7 @@
     "react-dom": "^18",
     "sonner": "^1.2.4",
     "stripe": "^14.7.0",
-    "tailwind-merge": "^2.0.0",
+    "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
     "unsplash-js": "^7.0.18",
     "usehooks-ts": "^2.9.1",
@@ -49,7 +49,7 @@
     "eslint-config-next": "^14.0.3",
     "postcss": "^8",
     "prisma": "^5.6.0",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.3.5",
     "typescript": "^5"
   }
 }
