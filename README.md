@@ -1,17 +1,23 @@
-# SprintEase
+## SprintEase
 
-This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Flexible work management tool for agile development
+> This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Flexible work management tool for agile development
 
-> #### Landing page
->
+### Landing page
+
 > <img src="/public/demo-images/landing.png"/>
 
 ##
 
-> #### Platform
->
+### Platform
+
 > <img src="/public/demo-images/boards.png"/>
+>
+> ##
+>
 > <img src="/public/demo-images/board.png"/>
+>
+> ##
+>
 > <img src="/public/demo-images/task.png"/>
 
 ##
@@ -24,7 +30,7 @@ This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Fle
 
 **Node version 18.x.x**
 
-### Install packages
+### Install Packages
 
 ```shell
 npm i
@@ -51,11 +57,11 @@ NEXT_PUBLIC_APP_URL=
 STRIPE_WEBHOOK_SECRET=
 ```
 
-### Additional info
+#### Additional Info
 
 This application is built with `Server Actions`
 
-### Setup Prisma
+#### Setup Prisma
 
 Add PostgreSQL Database
 
@@ -65,7 +71,7 @@ npx prisma db push
 
 ```
 
-## Getting Started
+#### Getting Started
 
 First, run the development server:
 
