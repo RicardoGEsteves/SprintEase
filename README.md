@@ -2,9 +2,21 @@
 
 This is `SprintEase` a B2B SaaS (Business to Business Software as a Service) Flexible work management tool for agile development
 
+#### Landing page
+
+<img src="/demo-images/app-boards.PNG"/>
+<img src="/demo-images/board.PNG"/>
+<img src="/demo-images/task-info.PNG"/>
+
+##
+
+#### Platform
+
+##
+
 ## Stack
 
-`React, Typescript, Next.js 14, Clerk, Supabase, PostgreSQL, Zustand, Prisma, Tailwind, Shadcn-ui, Server Actions, Stripe, `
+`React, Typescript, Next.js 14, Clerk, Supabase, PostgreSQL, Zustand, Prisma, Zod, Tailwind, Shadcn-ui, Server Actions, Stripe, sonner`
 
 ### Prerequisites
 
