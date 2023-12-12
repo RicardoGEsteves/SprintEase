@@ -14,13 +14,13 @@ environments:
   - name: Node.js
     variables:
       - name: NODE_PATH
-        value: /SprintEase/node_modules
+        value: /sprint-ease/node_modules
 
 # Specific rules or configurations for Node.js/npm projects
 nodejs:
   package-json: |
     {
-      "name": "SprintEase",
+      "name": "sprint-ease",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
