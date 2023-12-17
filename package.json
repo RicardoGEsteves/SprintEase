@@ -27,7 +27,7 @@
     "date-fns": "^2.30.0",
     "lodash": "^4.17.21",
     "lucide-react": "^0.298.0",
-    "next": "^14.0.3",
+    "next": "^14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "sonner": "^1.2.4",
