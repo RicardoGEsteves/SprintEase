@@ -12,7 +12,7 @@
   "dependencies": {
     "@clerk/nextjs": "^4.29.2",
     "@hello-pangea/dnd": "^16.5.0",
-    "@prisma/client": "^5.7.1",
+    "@prisma/client": "^5.8.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
