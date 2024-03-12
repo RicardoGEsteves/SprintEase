@@ -1,5 +1,7 @@
 # SprintEase - Agile Work Management Tool
 
+> **(UPDATE)** - with the latest dependencies updates, you will have to do some small config changes.
+
 SprintEase is a powerful and flexible work management tool designed for agile development in a B2B SaaS (Business to Business Software as a Service) environment. SprintEase empowers teams with features tailored for agile methodologies, making collaboration and project management seamless. Built on a robust technology stack, including React, Typescript, Next.js 14, and integrated with Clerk, Supabase, PostgreSQL, and other cutting-edge technologies, it's a go-to solution for efficient agile project management.
 
 ## Key Features
