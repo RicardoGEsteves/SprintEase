@@ -31,7 +31,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sonner": "^1.4.3",
-    "stripe": "^16.9.0",
+    "stripe": "^17.1.0",
     "swiper": "^11.1.12",
     "tailwind-merge": "^2.5.0",
     "tailwindcss-animate": "^1.0.7",
