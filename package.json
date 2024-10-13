@@ -10,7 +10,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.5.2",
+    "@clerk/nextjs": "^5.7.2",
     "@hello-pangea/dnd": "^17.0.0",
     "@prisma/client": "^5.19.0",
     "@radix-ui/react-accordion": "^1.1.2",
@@ -21,17 +21,17 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.1.2",
-    "@tanstack/react-query": "^5.55.1",
+    "@tanstack/react-query": "^5.59.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "lodash": "^4.17.21",
-    "lucide-react": "^0.447.0",
-    "next": "^14.2.7",
+    "lucide-react": "^0.452.0",
+    "next": "^14.2.15",
     "react": "^18",
     "react-dom": "^18",
     "sonner": "^1.4.3",
-    "stripe": "^17.1.0",
+    "stripe": "^17.2.0",
     "swiper": "^11.1.12",
     "tailwind-merge": "^2.5.0",
     "tailwindcss-animate": "^1.0.7",
@@ -42,15 +42,15 @@
   },
   "devDependencies": {
     "@types/lodash": "4.17.10",
-    "@types/node": "22.7.4",
+    "@types/node": "22.7.5",
     "@types/react": "18.3.11",
-    "@types/react-dom": "18.3.0",
+    "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
     "eslint": "8.57.1",
-    "eslint-config-next": "14.2.14",
+    "eslint-config-next": "14.2.15",
     "postcss": "8.4.47",
     "prisma": "5.20.0",
     "tailwindcss": "3.4.13",
-    "typescript": "5.6.2"
+    "typescript": "5.6.3"
   }
 }
