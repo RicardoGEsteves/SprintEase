@@ -33,7 +33,7 @@
     "sonner": "^1.4.3",
     "stripe": "^17.1.0",
     "swiper": "^11.1.12",
-    "tailwind-merge": "^2.5.0",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
     "unsplash-js": "^7.0.19",
     "usehooks-ts": "^3.0.1",
