@@ -10,7 +10,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@clerk/nextjs": "^5.5.2",
+    "@clerk/nextjs": "^6.0.2",
     "@hello-pangea/dnd": "^17.0.0",
     "@prisma/client": "^5.19.0",
     "@radix-ui/react-accordion": "^1.1.2",
